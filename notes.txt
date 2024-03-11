@@ -1,0 +1,62 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push():
+Time to run code with unshift():
+
+Results for extraLargeArray
+unshift 1.4876432 s
+push 3.188 ms
+
+Large Array
+-----------
+Time to run code with push():
+Time to run code with unshift():
+
+Results for largeArray
+unshift 23.467 ms
+push 2.5901 ms
+
+Medium Array
+------------
+Time to run code with push():
+Time to run code with unshift():
+
+Results for mediumArray
+unshift 390.8 μs
+push 131.8 μs
+
+Small Array
+-----------
+Time to run code with push():
+Time to run code with unshift():
+
+Results for smallArray
+unshift 37.1 μs
+push 42.6 μs
+
+Tiny Array
+----------
+Time to run code with push():
+Time to run code with unshift():
+
+Results for tinyArray
+unshift 70.3 μs
+push 298.9 μs
+
+
+-----------
+RESULTS ANALYSIS:
+
+
+After analyzing the results for each array, we can see a clear pattern 
+for how each function scales with increasing array size. As the size of 
+the arrays increases from tinyArray to extraLargeArray, so does the time.
+But the rate the time increases does vary between the two functions. 
+The doublerAppend function, which uses the push method shows a more 
+consistent increase in time with increasing array size. But the 
+doublerInsert function, which uses the unshift method has a much more 
+increase in time when the array size grows larger. This could meand that
+that the doublerAppend function scales better than the doublerInsert function. 
